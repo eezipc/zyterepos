@@ -1,0 +1,17 @@
+{% extends 'style.html' %}
+
+{% block content %}
+
+</div> -->
+{% for repos in zytedata %}
+<table class="table">
+  <tbody>
+    <tr>
+      <td width="50%">{{ repos['name'] }}</td>
+      <td width="50%">{{ repos['stargazers_count'] }}</td>
+    </tr>
+  </tbody>
+</table>
+{% endfor %}
+
+{% endblock content %}
